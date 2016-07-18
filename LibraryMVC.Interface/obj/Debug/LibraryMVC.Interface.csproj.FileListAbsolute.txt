@@ -1,0 +1,14 @@
+C:\LibraryMVC\LibraryMVC.Interface\bin\Debug\LibraryMVC.Interface.dll
+C:\LibraryMVC\LibraryMVC.Interface\bin\Debug\LibraryMVC.Interface.pdb
+C:\LibraryMVC\LibraryMVC.Interface\bin\Debug\LibraryMVC.Entities.dll
+C:\LibraryMVC\LibraryMVC.Interface\bin\Debug\LibraryMVC.Entities.pdb
+C:\LibraryMVC\LibraryMVC.Interface\obj\Debug\LibraryMVC.Interface.csprojResolveAssemblyReference.cache
+C:\LibraryMVC\LibraryMVC.Interface\obj\Debug\LibraryMVC.Interface.dll
+C:\LibraryMVC\LibraryMVC.Interface\obj\Debug\LibraryMVC.Interface.pdb
+C:\LibraryMVC_\LibraryMVC.Interface\bin\Debug\LibraryMVC.Interface.dll
+C:\LibraryMVC_\LibraryMVC.Interface\bin\Debug\LibraryMVC.Interface.pdb
+C:\LibraryMVC_\LibraryMVC.Interface\bin\Debug\LibraryMVC.Entities.dll
+C:\LibraryMVC_\LibraryMVC.Interface\bin\Debug\LibraryMVC.Entities.pdb
+C:\LibraryMVC_\LibraryMVC.Interface\obj\Debug\LibraryMVC.Interface.csprojResolveAssemblyReference.cache
+C:\LibraryMVC_\LibraryMVC.Interface\obj\Debug\LibraryMVC.Interface.dll
+C:\LibraryMVC_\LibraryMVC.Interface\obj\Debug\LibraryMVC.Interface.pdb

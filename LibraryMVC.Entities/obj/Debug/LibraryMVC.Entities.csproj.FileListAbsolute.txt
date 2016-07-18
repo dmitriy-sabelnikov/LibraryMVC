@@ -1,0 +1,10 @@
+C:\LibraryMVC\LibraryMVC.Entities\bin\Debug\LibraryMVC.Entities.dll
+C:\LibraryMVC\LibraryMVC.Entities\bin\Debug\LibraryMVC.Entities.pdb
+C:\LibraryMVC\LibraryMVC.Entities\obj\Debug\LibraryMVC.Entities.csprojResolveAssemblyReference.cache
+C:\LibraryMVC\LibraryMVC.Entities\obj\Debug\LibraryMVC.Entities.dll
+C:\LibraryMVC\LibraryMVC.Entities\obj\Debug\LibraryMVC.Entities.pdb
+C:\LibraryMVC_\LibraryMVC.Entities\bin\Debug\LibraryMVC.Entities.dll
+C:\LibraryMVC_\LibraryMVC.Entities\bin\Debug\LibraryMVC.Entities.pdb
+C:\LibraryMVC_\LibraryMVC.Entities\obj\Debug\LibraryMVC.Entities.csprojResolveAssemblyReference.cache
+C:\LibraryMVC_\LibraryMVC.Entities\obj\Debug\LibraryMVC.Entities.dll
+C:\LibraryMVC_\LibraryMVC.Entities\obj\Debug\LibraryMVC.Entities.pdb

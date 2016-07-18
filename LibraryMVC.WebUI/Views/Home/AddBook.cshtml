@@ -1,0 +1,28 @@
+﻿@model LibraryMVC.Entities.Book
+
+<div class="modal-content">
+    <div class="modal-header">
+        <button class="close" data-dismiss="modal" area-hidden="true">x</button>
+        <h4>Добавление книги</h4>
+    </div>
+    @using (Html.BeginForm("AddBook", "Home"))
+    {
+        <div class="modal-body form-group">
+            @Html.HiddenFor(m => m.BookId)
+            @Html.HiddenFor(m => m.AuthorId)
+            <label>Название:</label>
+            @Html.TextBox("Name", Model.Name, new { @class = "form-control" })
+            <label>Жанр:</label>
+            @Html.TextBox("Genre", Model.Genre, new { @class = "form-control" })
+            <label>Количество страниц:</label>
+            @Html.TextBox("CountPage", Model.CountPage, new { @class = "form-control" })
+        </div>
+        <div class="modal-footer">
+            <input type="submit" value="Сохранить" class="btn btn-primary" />
+            <button type="button" data-dismiss="modal" class="btn btn-default">Отмена</button>
+        </div>
+    }
+</div>
+
+
+

@@ -1,0 +1,71 @@
+﻿@model LibraryMVC.Entities.Author
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    if (@Model.AuthorId == 0)
+    {
+        ViewBag.Title = "Создание автора"; 
+    }
+    else
+    {
+        ViewBag.Title = "Редактирование данных автора " + @Model.Surname;
+    }
+}
+<script type="text/javascript">
+    $(function () {
+        $.ajaxSetup({ cache: false });
+        $(".addBook").click(function (e) {
+
+            e.preventDefault();
+            $.get(this.href, function (data) {
+                $('#dialogContent').html(data);
+                $('#modDialog').modal('show');
+            });
+        });
+    })
+</script>
+
+<div class="panel">
+    <div class="panel-footer"> 
+        @if (@Model.AuthorId == 0)
+        {
+            <h3>Создание автора</h3>
+        }
+        else
+        {
+            <h3>Редактирование данных автора @Model.Surname</h3>
+        }
+    </div>
+    @using (Html.BeginForm("Edit", "Home"))
+    {
+        <div class="panel-body">
+            @Html.HiddenFor(m => m.AuthorId)
+            <label>Имя</label>
+            @Html.TextBox("Name", Model.Name, new { @class = "form-control" })
+            <label>Фамилия</label>
+            @Html.TextBox("Patronymic", Model.Patronymic, new { @class = "form-control" })
+            <label>Отчество</label>
+            @Html.TextBox("Surname", Model.Surname, new { @class = "form-control" })
+            <label>Дата рождения</label>
+            @Html.TextBox("BirthDay", Model.BirthDay.ToShortDateString(), new { @class = "form-control" })
+            <div class="panel">
+                <div class="page-header">
+                    <h3>Книги </h3>
+                    @Html.ActionLink("Добавить книгу", "AddBook", new { AuthorId = @Model.AuthorId }, new { @class = "addBook" })
+                </div>
+                @if (@Model.Books != null)
+                {
+                    @Html.Partial("Book", @Model.Books)
+                }
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" value="Сохранить" class="btn btn-primary" />
+            @Html.ActionLink("Отменить изменения и вернуться к списку", "Index")
+        </div>
+    }
+    <div id="modDialog" class="modal fade">
+        <div id="dialogContent" class="modal-dialog"></div>
+    </div>
+</div>
+

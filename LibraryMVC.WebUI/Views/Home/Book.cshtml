@@ -1,0 +1,14 @@
+﻿@using LibraryMVC.Entities
+@model List<LibraryMVC.Entities.Book>
+
+@foreach (Book book in @Model)
+{
+    <dl class="panel panel-primary panel-body dl-horizontal">
+        <dt>Название:</dt>
+        <dd>@book.Name</dd>
+        <dt>Жанр:</dt>
+        <dd>@book.Genre</dd>
+        <dt>Количество страниц:</dt>
+        <dd>@book.CountPage</dd>
+    </dl>
+}
